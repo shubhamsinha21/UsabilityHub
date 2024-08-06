@@ -1,0 +1,151 @@
+/* media queries --------------------------------------------------------------- */
+/* small device - mobile version */
+@media screen and (max-width: 991px) {
+  .nav-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .nav-toggle img {
+    width: 25px;
+  }
+
+  .main-nav {
+    overflow: initial;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .nav-links > ul {
+    flex-direction: column;
+  }
+
+  .example-area {
+    gap: 20px;
+  }
+
+  .examples-card {
+    width: calc(50% - 10px);
+    height: 220px;
+  }
+
+  .cta-section {
+    padding: 20px 0;
+    min-height: 30vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links > ul {
+    gap: 20px;
+  }
+
+  .header-section {
+    flex-direction: column-reverse;
+  }
+
+  .header-right img {
+    width: 80vw;
+  }
+
+  .header-left {
+    max-width: 80vw;
+    text-align: center;
+  }
+
+  .primary-button {
+    margin: 30px auto 0;
+  }
+
+  .feature-area {
+    gap: 30px;
+  }
+
+  .feature-card {
+    min-width: calc(50% - 18px);
+  }
+
+  .big-feature-container,
+  #big-container {
+    flex-direction: column;
+  }
+
+  .feature-img {
+    width: 100%;
+  }
+
+  #big-container .feature-img {
+    width: 100vw;
+  }
+
+  .circle {
+    top: 400px;
+    left: 10%;
+    width: 400px;
+    height: 550px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  :root {
+    --padding-inline-section: 10px;
+  }
+
+  .company-logo > img {
+    width: 40px;
+  }
+
+  .company-logo {
+    font-size: 0;
+  }
+
+  .nav-toggle > img {
+    width: 20px;
+  }
+
+  .feature-card {
+    min-width: 80%;
+    gap: 15px;
+  }
+
+  .feature-card > a {
+    font-size: 10px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
